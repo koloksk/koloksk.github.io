@@ -130,6 +130,9 @@
     .text-carousel p {
       display: none;
     }
+    .intro {
+        height: 93vh !important;
+      }
   }
 
   .item img {
@@ -165,13 +168,13 @@
   }
 
   .footer{
-    font-size: 3vw;
+    font-size: 4vw;
     display: flex;
     justify-content: center;
     background-color: #000000;
     
   }
   .footer a {
-    padding-block: 50px;
+    padding-block: 2vh;
     padding-inline: 3vw;
   }
