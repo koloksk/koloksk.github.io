@@ -16,8 +16,7 @@ VANTA.DOTS({
   let container = document.getElementById("container");
   let anchor = document.getElementById("title1");
   document.onwheel = function (e) {
-    if (e.deltaY > 0 && window.pageYOffset == 0) {
-      console.log("a");
+    if (e.deltaY > 0 && window.scrollY == 0) {
       container.parentNode.scrollTo({
         top: anchor.offsetTop,
         left: 0,
@@ -25,16 +24,3 @@ VANTA.DOTS({
       });
     }
   };
-
-//karuzela
-  let index = 0;
-  let items = document.querySelectorAll(".carousel-item");
-  let length = items.length;
-
-  function next() {
-    items[index].classList.remove("active");
-    index = (index + 1) % length;
-    items[index].classList.add("active");
-  }
-
-  setInterval(next, 2000);
