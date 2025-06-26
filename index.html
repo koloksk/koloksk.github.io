@@ -1,177 +1,322 @@
-<html>
-  <head>
-    <meta name="referrer" content="no-referrer" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.dots.min.js"></script>
-  </head>
-  <body>
-    <div class="container" id="container">
-      <div class="intro" id="intro">
-        <canvas></canvas>
-        <img
-          src="https://avatars.githubusercontent.com/u/34625628?v=4"
-          alt="avatar"
-          class="avatar"
-        />
-        <h1>Sebastian Kwaczała</h1>
-        <p>Fullstack Developer</p>
-        <span></span>
-        <a href="#title1"><div class="icon-scroll"></div></a>
-      </div>
-      <div
-        class="title"
-        id="title1"
-        style="background-color: #151414; color: white"
-      >
-        Moje Realizacje
-      </div>
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-          <li data-target="#myCarousel" data-slide-to="3"></li>
-          <li data-target="#myCarousel" data-slide-to="4"></li>
-        </ol>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastian Kwaczała - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Scroll -->
+    <div class="scroll-progress"></div>
 
-        <div class="carousel-inner">
-          <div class="item active">
-            <div class="text-carousel">
-              <h1>Emmet Drop</h1>
-              <p>
-                EmmetDrop to innowacyjna platforma umożliwiająca anonimowe
-                przesyłanie plików w trybie peer-to-peer (P2P), podobnie jak
-                popularna funkcja Airdrop. Użytkownicy mogą bezpiecznie i szybko
-                dzielić się różnego rodzaju plikami, takimi jak zdjęcia, filmy
-                czy dokumenty, zachowując pełną prywatność. Dzięki zaawansowanym
-                technologiom P2P, platforma gwarantuje błyskawiczny i bezpieczny
-                transfer plików między urządzeniami, niezależnie od ich
-                lokalizacji geograficznej. EmmetDrop to idealne rozwiązanie dla
-                osób, które poszukują szybkiego, bezpiecznego i anonimowego
-                sposobu na wymianę plików bez ujawniania swoich danych
-                osobowych.
-              </p>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Sebastian Kwaczała</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">Bio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Umiejętności</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Realizacje</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
+                </ul>
             </div>
-            <img src="https://i.imgur.com/CklKDLV.png" />
-          </div>
+        </div>
+    </nav>
 
-          <div class="item">
-            <div class="text-carousel">
-              <h1>Hikvision Scanner</h1>
-              <p>
-                Hikvision Scanner to zaawansowana aplikacja napisana w języku
-                Java, która umożliwia skanowanie kamerek monitoringu Hikvision w
-                poszukiwaniu potencjalnych podatności. Dzięki tej aplikacji
-                użytkownicy mogą szybko i efektywnie przeszukać sieć w
-                poszukiwaniu kamer, które są podatne na ataki. Aplikacja
-                wykorzystuje zaawansowane algorytmy skanowania, umożliwiając
-                identyfikację słabych punktów w systemach monitoringu Hikvision.
-                Hikvision Scanner zapewnia bezpieczeństwo, pomagając
-                administratorom sieci w zabezpieczaniu swoich systemów przed
-                potencjalnymi zagrożeniami.
-              </p>
+    <!-- Hero -->
+    <header class="hero-section">
+        <div class="animated-bg">
+            <div class="floating-shapes">
+                <div class="shape"></div>
+                <div class="shape"></div>
+                <div class="shape"></div>
             </div>
-            <img
-              src="https://user-images.githubusercontent.com/34625628/155844724-ece40e96-efe5-4a1e-a147-7f15560962bc.png"
-            />
-          </div>
-
-          <div class="item">
-            <div class="text-carousel">
-              <h1>KL-Dashboard</h1>
-              <p>
-                KL-Dashboard to wszechstronna aplikacja napisana w NodeJS
-                umożliwiająca zarządzanie zdalnymi komputerami przez websockety.
-                Dzięki technologii Emmet, użytkownicy mają możliwość zdalnego
-                sterowania urządzeniami oraz dostępu do konsoli. Dodatkowo,
-                aplikacja oferuje funkcję podglądu na żywo VNC, co umożliwia
-                użytkownikom monitorowanie działań na podłączonych komputerach w
-                czasie rzeczywistym.
-              </p>
+        </div>
+        <div class="container">
+            <div class="hero-content text-center">
+                <img src="https://avatars.githubusercontent.com/u/34625628?v=4" alt="Sebastian Kwaczała" class="avatar">
+                <h1 class="hero-title">Sebastian Kwaczała</h1>
+                <h3 class="hero-subtitle">Fullstack Developer</h3>
+                <p class="hero-description">
+                    tu se cos napiszesz
+                </p>
+                <a href="#projects" class="btn-primary-custom">Zobacz moje realizacje</a>
             </div>
+        </div>
+    </header>
 
-            <img
-              src="https://camo.githubusercontent.com/d562a6401a0b648541f7de0e8922ab2246348d3f74a27f9b7aa3f3da2a246896/68747470733a2f2f692e696d6775722e636f6d2f56415a796355362e706e67"
-            />
-          </div>
-          <div class="item">
-            <div class="text-carousel">
-              <h1>MShop</h1>
-              <p>
-                Minimalistyczny system CMS do zarządzania sklepem internetowym,
-                napisany w php i mysql.
-              </p>
+    <!-- About -->
+    <section id="about" class="section-animate">
+        <div class="container">
+            <h2 class="section-title">O mnie</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="modern-card">
+                        <p class="about-text">
+                            tu se cos <strong>napiszesz</strong>
+                        </p>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
 
-            <img src="https://i.imgur.com/3N5gH6Y.png" />
-          </div>
-          <div class="item">
-            <div class="text-carousel">
-              <h1>Smart Home DIY</h1>
-              <p>
-                System inteligentnego domu stworzony na ekosystemie
-                HomeAssistant, który jest postawiony na terminalu dell wyse.
-                Komponenty łączące się są oparte o płytki esp8266 oraz zigbee.
-              </p>
+    <!-- Skills -->
+    <section id="skills" class="section-animate">
+        <div class="container">
+            <h2 class="section-title">Umiejętności</h2>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="modern-card skill-card">
+                        <i class="fab fa-java"></i>
+                        <h4>Java</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="modern-card skill-card">
+                        <i class="fab fa-php"></i>
+                        <h4>PHP</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="modern-card skill-card">
+                        <i class="fab fa-node-js"></i>
+                        <h4>Node.js</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="modern-card skill-card">
+                        <i class="fas fa-cake-candles"></i>
+                        <h4>CakePHP</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="modern-card skill-card">
+                        <i class="fab fa-html5"></i>
+                        <h4>HTML5</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="modern-card skill-card">
+                        <i class="fab fa-css3-alt"></i>
+                        <h4>CSS3</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="modern-card skill-card">
+                        <i class="fab fa-bootstrap"></i>
+                        <h4>Bootstrap</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="modern-card skill-card">
+                        <i class="fas fa-database"></i>
+                        <h4>MySQL</h4>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
 
-            <img src="https://i.imgur.com/zwzemvi.png" />
-          </div>
+    <section id="projects" class="section-animate">
+        <div class="container">
+            <h2 class="section-title">Realizacje</h2>
+            <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                </div>
+                <div class="carousel-inner">
+                    <!-- Smart Home DIY -->
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="https://i.imgur.com/zwzemvi.png" class="d-block w-100 project-img"
+                                    alt="Smart Home DIY" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                    data-img-src="https://i.imgur.com/zwzemvi.png">
+                            </div>
+                            <div class="col-md-6 project-content">
+                                <h3 class="project-title">Smart Home DIY</h3>
+                                <p class="project-description">
+                                    System inteligentnego domu stworzony na ekosystemie HomeAssistant, który jest
+                                    postawiony na terminalu Dell Wyse. Komponenty łączące się są oparte o płytki ESP8266
+                                    oraz Zigbee.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Emmet Drop -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="https://i.imgur.com/CklKDLV.png" class="d-block w-100 project-img"
+                                    alt="Emmet Drop" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                    data-img-src="https://i.imgur.com/CklKDLV.png">
+                            </div>
+                            <div class="col-md-6 project-content">
+                                <h3 class="project-title">Emmet Drop</h3>
+                                <p class="project-description">
+                                    EmmetDrop to innowacyjna platforma umożliwiająca anonimowe przesyłanie plików w
+                                    trybie peer-to-peer (P2P), podobnie jak popularna funkcja Airdrop. Użytkownicy mogą
+                                    bezpiecznie i szybko dzielić się różnego rodzaju plikami, takimi jak zdjęcia, filmy
+                                    czy dokumenty, zachowując pełną prywatność. Dzięki zaawansowanym technologiom P2P,
+                                    platforma gwarantuje błyskawiczny i bezpieczny transfer plików między urządzeniami,
+                                    niezależnie od ich lokalizacji geograficznej. EmmetDrop to idealne rozwiązanie dla
+                                    osób, które poszukują szybkiego, bezpiecznego i anonimowego sposobu na wymianę
+                                    plików bez ujawniania swoich danych osobowych.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Hikvision Scanner -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="https://user-images.githubusercontent.com/34625628/155844724-ece40e96-efe5-4a1e-a147-7f15560962bc.png"
+                                    class="d-block w-100 project-img" alt="Hikvision Scanner" data-bs-toggle="modal"
+                                    data-bs-target="#imageModal"
+                                    data-img-src="https://user-images.githubusercontent.com/34625628/155844724-ece40e96-efe5-4a1e-a147-7f15560962bc.png">
+                            </div>
+                            <div class="col-md-6 project-content">
+                                <h3 class="project-title">Hikvision Scanner</h3>
+                                <p class="project-description">
+                                    Hikvision Scanner to zaawansowana aplikacja napisana w języku Java, która umożliwia
+                                    skanowanie kamerek monitoringu Hikvision w poszukiwaniu potencjalnych podatności.
+                                    Dzięki tej aplikacji użytkownicy mogą szybko i efektywnie przeszukać sieć w
+                                    poszukiwaniu kamer, które są podatne na ataki. Aplikacja wykorzystuje zaawansowane
+                                    algorytmy skanowania, umożliwiając identyfikację słabych punktów w systemach
+                                    monitoringu Hikvision. Hikvision Scanner zapewnia bezpieczeństwo, pomagając
+                                    administratorom sieci w zabezpieczaniu swoich systemów przed potencjalnymi
+                                    zagrożeniami.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- MShop -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="https://i.imgur.com/3N5gH6Y.png" class="d-block w-100 project-img" alt="MShop"
+                                    data-bs-toggle="modal" data-bs-target="#imageModal"
+                                    data-img-src="https://i.imgur.com/3N5gH6Y.png">
+                            </div>
+                            <div class="col-md-6 project-content">
+                                <h3 class="project-title">MShop</h3>
+                                <p class="project-description">
+                                    Minimalistyczny system CMS do zarządzania sklepem internetowym, napisany w PHP i
+                                    MySQL.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
 
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-          <span class="sr-only">Poprzedni</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-          <span class="sr-only">Następny</span>
-        </a>
-      </div>
-
-      <div class="languages">
-        <h1>Języki w których programuje</h1>
-        <div class="language-icons">
-          <i class="devicon-nodejs-plain colored"></i>
-          <i class="devicon-php-plain colored"></i>
-          <i class="devicon-cakephp-plain colored"></i>
-          <i class="devicon-bootstrap-plain colored"></i>
-          <i class="devicon-java-plain-wordmark colored"></i>
-          <i class="devicon-html5-plain colored"></i>
-          <i class="devicon-css3-plain colored"></i>
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true"
+            data-bs-backdrop="static" data-bs-keyboard="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <div class="image-container d-flex justify-content-center align-items-center">
+                            <img src="" class="img-fluid fullscreen-img" alt="Fullscreen Project Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="title" style="background-color: black; color: white">
-        Kontakt
-      </div>
-      <div class="footer">
-        <a href="https://discordapp.com/users/266221361091837954" class="icon"
-          ><i class="fab fa-discord"></i
-        ></a>
-        <a href="https://github.com/koloksk" class="icon"
-          ><i class="fab fa-github"></i
-        ></a>
-        <a href="mailto:kontakt.koloksk@gmail.com" class="icon"
-          ><i class="fas fa-envelope"></i
-        ></a>
-      </div>
-    </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section-animate">
+        <div class="container">
+            <h2 class="section-title">Kontakt</h2>
+            <p class="text-center mb-5">Zainteresowany współpracą? Skontaktuj się ze mną!</p>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <a href="mailto:kontakt.koloksk@gmail.com" class="contact-card-link">
+                        <div class="modern-card contact-card">
+                            <i class="fas fa-envelope"></i>
+                            <h5>Email</h5>
+                            <p>kontakt.koloksk@gmail.com</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://github.com/koloksk" target="_blank" class="contact-card-link">
+                        <div class="modern-card contact-card">
+                            <i class="fab fa-github"></i>
+                            <h5>GitHub</h5>
+                            <p>Koloksk</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://discordapp.com/users/266221361091837954" target="_blank" class="contact-card-link">
+                        <div class="modern-card contact-card">
+                            <i class="fab fa-discord"></i>
+                            <h5>Discord</h5>
+                            <p>Koloksk</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4 text-center text-md-start">
+                    <div class="footer-section">
+                        <h5>Sebastian Kwaczała</h5>
+                        <p>Fullstack Developer</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="footer-section">
+                        <h5>Śledź mnie</h5>
+                        <a href="https://github.com/koloksk" target="_blank" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://discordapp.com/users/266221361091837954" target="_blank" class="social-icon">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <div class="footer-section">
+                        <h5>Kontakt</h5>
+                        <p><a href="mailto:kontakt.koloksk@gmail.com"
+                                class="footer-contact-link">kontakt.koloksk@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center">© 2025 Sebastian Kwaczała. Wszelkie prawa zastrzeżone.</p>
+            <p class="text-center">Zaprojektowane i zakodowane przez | skunkyy ;p</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
