@@ -35,7 +35,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const items = carousel.querySelectorAll('.carousel-item');
     const imageModal = document.querySelector('#imageModal');
     const modalImage = imageModal.querySelector('.fullscreen-img');
-    let modalInstance; 
+
+    const modalInstance = new bootstrap.Modal(imageModal, {
+        backdrop: 'static',
+        keyboard: true
+    });
 
     items.forEach((item, index) => {
         const indicator = document.createElement('button');
@@ -62,20 +66,18 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             modalImage.src = e.target.dataset.imgSrc;
             modalImage.alt = e.target.alt;
-
-            modalInstance = new bootstrap.Modal(imageModal, {
-                backdrop: 'static',
-                keyboard: true
-            });
             modalInstance.show();
         }
     });
 
     document.addEventListener('click', (e) => {
         const isModalOpen = imageModal.classList.contains('show');
-        const isClickInsideImage = modalImage.contains(e.target);
-        if (isModalOpen && !isClickInsideImage) {
-            modalInstance?.hide();
+        const isClickInsideModal = imageModal.contains(e.target);
+        const isClickOnImage = modalImage.contains(e.target);
+
+        if (isModalOpen && !isClickInsideModal && !isClickOnImage) {
+            modalInstance.hide();
         }
     });
 });
+
